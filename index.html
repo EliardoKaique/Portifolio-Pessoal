@@ -1,0 +1,96 @@
+<!-- Informa ao navegador que estamos usando HTML5. -->
+<!DOCTYPE html>
+<!-- Define o idioma da página. -->
+<html lang="pt-BR">
+<head>
+    <!-- Permite usar acentos e ajusta a página à tela. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba e descrição da página. -->
+    <title>Eliardo Kaique | Portfólio</title>
+    <!-- Carrega o CSS externo da pasta styles. -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site. -->
+    <header>
+        <h2>Eliardo Kaique</h2>
+        <!-- Menu: cada link abre uma página. A classe ativo destaca a página atual. -->
+        <nav>
+            <a href="index.html" class="ativo">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- Conteúdo principal. -->
+    <main>
+        <!-- Seção de apresentação. -->
+        <section class="apresentacao">
+            <h1>Meu portfólio</h1>
+            <p>Sou técnico em Informática e estudante de ADS. Desenvolvo sites, jogos e projetos de criação digital.</p>
+            <!-- O # leva à seção com o mesmo id nesta página. -->
+            <a class="botao" href="#projetos">Ver meus projetos</a>
+        </section>
+
+        <!-- O id permite encontrar esta seção pelo link do início. -->
+        <section id="projetos">
+            <h2>Meus projetos</h2>
+            <!-- A div permite deslizar a tabela quando a tela é pequena. -->
+            <div class="tabela">
+                <!-- table cria a tabela; caption mostra seu título. -->
+                <table>
+                    <caption>Projetos publicados e em desenvolvimento</caption>
+                    <!-- tr cria uma linha; th cria os títulos das colunas. -->
+                    <tr><th>Imagem</th><th>Projeto</th><th>Situação</th></tr>
+                    <!-- td cria as células com os dados. -->
+                    <tr>
+                        <td>
+                            <!-- A classe imagem limita o tamanho; width e height reservam o espaço no HTML. -->
+                            <img class="imagem" width="120" height="80" src="assents/logo_garage.jpg" alt="Glitch Garage">
+                        </td>
+                        <td>
+                            <h3>Glitch Garage</h3>
+                            <p>Site sobre miniaturas, dioramas e expositores personalizados.</p>
+                            <a href="https://glitch-garage.eliardo-kaique.workers.dev/">Visitar site</a>
+                        </td>
+                        <td>Publicado</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="imagem" width="120" height="80" src="assents/logo_lanterna.png" alt="Lanternas do Vazio">
+                        </td>
+                        <td><h3>Lanternas do Vazio</h3><p>Jogo no Roblox com exploração, mistério e puzzles.</p></td>
+                        <td>Em desenvolvimento</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="imagem" width="120" height="80" src="assents/logo_+1punch.png" alt="+1 Punho Vazio">
+                        </td>
+                        <td><h3>+1 Void Launch</h3><p>Simulador espacial com lançamentos e evolução no Roblox.</p></td>
+                        <td>Em desenvolvimento</td>
+                    </tr>
+                </table>
+            </div>
+            <p>No celular, deslize a tabela para ver todas as colunas.</p>
+        </section>
+
+        <section>
+            <h2>Meus conhecimentos</h2>
+            <div class="tabela">
+                <table>
+                    <caption>Ferramentas que estudo e utilizo</caption>
+                    <tr><th>Área</th><th>Ferramentas</th><th>Aplicação</th></tr>
+                    <tr><td>Desenvolvimento web</td><td>HTML, CSS e JavaScript</td><td>Criação de sites.</td></tr>
+                    <tr><td>Jogos</td><td>Roblox Studio</td><td>Ambientes e mecânicas de jogos.</td></tr>
+                    <tr><td>Modelagem 3D</td><td>Blender</td><td>Objetos e cenários.</td></tr>
+                    <tr><td>Inteligência artificial</td><td>Ferramentas de IA</td><td>Apoio aos estudos e à criação.</td></tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé do site. -->
+    <footer>
+        <p>© 2026 Eliardo Kaique da Costa Melo.</p>
+    </footer>
+</body>
+</html>
