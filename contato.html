@@ -1,0 +1,97 @@
+<!-- Informa ao navegador que estamos usando HTML5. -->
+<!DOCTYPE html>
+<!-- Define o idioma da página. -->
+<html lang="pt-BR">
+<head>
+    <!-- Permite usar acentos e ajusta a página à tela. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba e descrição da página. -->
+    <title>Contato | Eliardo Kaique</title>
+    <meta name="description" content="Formulário para clientes e dúvidas sobre os projetos.">
+    <!-- Carrega o CSS externo da pasta styles. -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site. -->
+    <header>
+        <h2>Eliardo Kaique</h2>
+        <!-- Menu: cada link abre uma página. A classe ativo destaca a página atual. -->
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="contato.html" class="ativo">Contato</a>
+        </nav>
+    </header>
+    <!-- Conteúdo principal. -->
+    <main>
+        <section>
+            <h1>Entre em contato</h1>
+            <p>Escolha o motivo do contato e envie sua mensagem.</p>
+
+            <!-- action indica quem recebe os dados; POST envia os dados do formulário. -->
+            <form action="https://formsubmit.co/kaique.melo06@aluno.ifce.edu.br" method="POST">
+                <!-- for liga o rótulo ao campo que tem o mesmo id. -->
+                <label for="tipo-contato">Tipo de contato</label>
+                <!-- select cria a lista e option cria cada escolha. -->
+                <select class="campo" id="tipo-contato" name="tipo_contato" required>
+                    <option value="" disabled selected>Selecione uma opção</option>
+                    <option value="cliente">Sou cliente</option>
+                    <option value="duvida">Quero tirar uma dúvida</option>
+                </select>
+
+                <label for="nome">Nome</label>
+                <!-- type define o tipo; name identifica o dado enviado; id identifica o campo.
+                     autocomplete sugere dados salvos; placeholder é uma dica; required exige preenchimento. -->
+                <input class="campo" type="text" id="nome" name="nome" autocomplete="name" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail</label>
+                <!-- type="email" verifica o formato básico do e-mail. -->
+                <input class="campo" type="email" id="email" name="email" autocomplete="email" placeholder="Digite seu e-mail" required>
+
+                <label for="mensagem">Mensagem</label>
+                <!-- textarea permite várias linhas; rows define a altura inicial. -->
+                <textarea class="campo" id="mensagem" name="mensagem" rows="5" placeholder="Conte sua ideia ou escreva sua dúvida" required></textarea>
+
+                <!-- fieldset agrupa opções; legend mostra o nome do grupo. -->
+                <fieldset>
+                    <legend>Interesses (opcional)</legend>
+                    <div class="opcoes">
+                        <!-- checkbox permite marcar mais de uma opção.
+                             Quando marcada, a caixa envia seu name e seu value. -->
+                        <label for="interesse-web"><input type="checkbox" id="interesse-web" name="interesse_web" value="Sim"> Sites</label>
+                        <label for="interesse-jogos"><input type="checkbox" id="interesse-jogos" name="interesse_jogos" value="Sim"> Jogos</label>
+                    </div>
+                </fieldset>
+
+                <!-- submit envia o formulário após a validação dos campos obrigatórios. -->
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Contato direto</h2>
+            <!-- mailto abre o aplicativo de e-mail do visitante. -->
+            <p><a href="mailto:kaique.melo06@aluno.ifce.edu.br">kaique.melo06@aluno.ifce.edu.br</a></p>
+            <p>Boa Viagem, Ceará.</p>
+            <h3>Instagram</h3>
+            <!-- Os três links levam aos seus perfis e abrem em outra aba. -->
+            <div class="redes">
+                <a href="https://www.instagram.com/eliardokaique/" target="_blank" rel="noopener noreferrer">Pessoal: @eliardokaique</a>
+                <a href="https://www.instagram.com/gl1tchz0ne/" target="_blank" rel="noopener noreferrer">Jogos: @gl1tchz0ne</a>
+                <a href="https://www.instagram.com/glitchgarage164/" target="_blank" rel="noopener noreferrer">Miniaturas: @glitchgarage164</a>
+            </div>
+        </section>
+    </main>
+    <!-- Rodapé do site. -->
+    <footer>
+        <!-- target abre em outra aba; rel impede que a nova aba controle esta página. -->
+        <p class="redes">
+            <a href="https://www.instagram.com/eliardokaique/" target="_blank" rel="noopener noreferrer">Instagram pessoal</a>
+            <a href="https://www.instagram.com/gl1tchz0ne/" target="_blank" rel="noopener noreferrer">Instagram dos jogos</a>
+            <a href="https://www.instagram.com/glitchgarage164/" target="_blank" rel="noopener noreferrer">Instagram de miniaturas</a>
+        </p>
+        <p>© 2026 Eliardo Kaique da Costa Melo.</p>
+    </footer>
+</body>
+</html>

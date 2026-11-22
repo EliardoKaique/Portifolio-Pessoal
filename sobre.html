@@ -1,0 +1,71 @@
+<!-- Informa ao navegador que estamos usando HTML5. -->
+<!DOCTYPE html>
+<!-- Define o idioma da página. -->
+<html lang="pt-BR">
+<head>
+    <!-- Permite usar acentos e ajusta a página à tela. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título da aba e descrição da página. -->
+    <title>Sobre | Eliardo Kaique</title>
+    <meta name="description" content="Apresentação e formação de Eliardo Kaique.">
+    <!-- Carrega o CSS externo da pasta styles. -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Cabeçalho do site. -->
+    <header>
+        <h2>Eliardo Kaique</h2>
+        <!-- Menu: cada link abre uma página. A classe ativo destaca a página atual. -->
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="sobre.html" class="ativo">Sobre</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+    <!-- Conteúdo principal. -->
+    <main>
+        <section id="perfil">
+            <h1>Sobre mim</h1>
+            <p>Meu nome é Eliardo Kaique da Costa Melo. Sou técnico em Informática e estudante de Análise e Desenvolvimento de Sistemas.</p>
+            <p>Trabalho em projetos próprios de sites, jogos no Roblox e modelagem 3D. Também uso inteligência artificial como apoio nos estudos e na criação.</p>
+            <img width="180" height="240" src="assents/foto_perfil.jpg" alt="Foto de Eliardo Kaique">
+        </section>
+
+        <section>
+            <h2>Minha formação</h2>
+            <!-- Cada article reúne as informações de uma formação. -->
+            <article>
+                <h3>Técnico em Informática</h3>
+                <p>EEEP Venceslau Vieira Batista.</p>
+                <p>2023 a 2025.</p>
+            </article>
+            <article>
+                <h3>Análise e Desenvolvimento de Sistemas</h3>
+                <p>Curso superior em andamento.</p>
+            </article>
+        </section>
+
+        <section>
+            <h2>O que desenvolvo</h2>
+            <!-- ul cria uma lista e li representa cada item. -->
+            <ul>
+                <li>Sites com HTML, CSS e JavaScript.</li>
+                <li>Jogos e experiências no Roblox.</li>
+                <li>Objetos e cenários no Blender.</li>
+            </ul>
+            <a class="botao" href="contato.html">Entre em contato</a>
+        </section>
+    </main>
+    <!-- Rodapé do site. -->
+    <footer>
+        <!-- target abre em outra aba; rel impede que a nova aba controle esta página. -->
+        <p class="redes">
+            <a href="https://www.instagram.com/eliardokaique/" target="_blank" rel="noopener noreferrer">Instagram pessoal</a>
+            <a href="https://www.instagram.com/gl1tchz0ne/" target="_blank" rel="noopener noreferrer">Instagram dos jogos</a>
+            <a href="https://www.instagram.com/glitchgarage164/" target="_blank" rel="noopener noreferrer">Instagram de miniaturas</a>
+        </p>
+        <p>© 2026 Eliardo Kaique da Costa Melo.</p>
+    </footer>
+</body>
+</html>
